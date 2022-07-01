@@ -40,16 +40,11 @@ typedef enum
     STATE_STATUS_VERIFY,
     STATE_IHM_REQUEST,
     STATE_IHM_READ,
-    STATE_IHM_WRITE,
-    STATE_ROBO_WRITE,
     STATE_WAIT_READ_COMPLETE,
-    STATE_READ_COMPLETE,
     STATE_VERIFY,
-    STATE_IDLE,
     STATE_XFER_SUCCESSFUL,
     STATE_XFER_ERROR,
        
-
 } STATES;
 
 typedef enum
@@ -94,11 +89,11 @@ void controlSlave(GPIO_PIN pin, uintptr_t context)
     
     if(INT_Get() == IHM_WANT_SEND_DATA)
     {
-        ihmStatus = IHM_INT_STATE;
+        *ihmStatus = IHM_INT_STATE;
     }
     else
     {
-        ihmStatus = IHM_NO_INT_STATE;
+        *ihmStatus = IHM_NO_INT_STATE;
     }
 }
 
@@ -162,8 +157,10 @@ int main ( void )
                     state = STATE_XFER_ERROR;
                 }
                 break;
-        }
-        
+                
+            default:
+                    break;
+        }    
        
         
     }
