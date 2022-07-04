@@ -40,6 +40,7 @@
         </logicalFolder>
       </logicalFolder>
       <itemPath>../src/app_i2c_ihm.h</itemPath>
+      <itemPath>../src/app_uart.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -90,6 +91,7 @@
       </logicalFolder>
       <itemPath>../src/main.c</itemPath>
       <itemPath>../src/app_i2c_ihm.c</itemPath>
+      <itemPath>../src/app_uart.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
