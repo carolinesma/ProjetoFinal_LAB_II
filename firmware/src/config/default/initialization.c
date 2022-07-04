@@ -45,6 +45,7 @@
 // *****************************************************************************
 #include "definitions.h"
 #include "device.h"
+#include "app_i2c_ihm.h"
 
 
 
@@ -164,9 +165,12 @@ void SYS_Initialize ( void* data )
 
 
 	GPIO_Initialize();
-
     CORETIMER_Initialize();
     I2C1_Initialize();
+	UART1_Initialize();
+    DMAC_Initialize();
+    
+    APP_I2C_IHM_Initialize();
 
 
 

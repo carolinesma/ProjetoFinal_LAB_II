@@ -62,18 +62,26 @@
 // *****************************************************************************
 
 
-/*** Macros for INT pin ***/
-#define INT_Get()               ((PORTE >> 8) & 0x1)
-#define INT_PIN                  GPIO_PIN_RE8
+/*** Macros for LED_CONTROL_I2C pin ***/
+#define LED_CONTROL_I2C_Set()               (LATDSET = (1<<14))
+#define LED_CONTROL_I2C_Clear()             (LATDCLR = (1<<14))
+#define LED_CONTROL_I2C_Toggle()            (LATDINV= (1<<14))
+#define LED_CONTROL_I2C_OutputEnable()      (TRISDCLR = (1<<14))
+#define LED_CONTROL_I2C_InputEnable()       (TRISDSET = (1<<14))
+#define LED_CONTROL_I2C_Get()               ((PORTD >> 14) & 0x1)
+#define LED_CONTROL_I2C_PIN                  GPIO_PIN_RD14
 
-/*** Macros for LED_ERROR pin ***/
-#define LED_ERROR_Set()               (LATDSET = (1<<14))
-#define LED_ERROR_Clear()             (LATDCLR = (1<<14))
-#define LED_ERROR_Toggle()            (LATDINV= (1<<14))
-#define LED_ERROR_OutputEnable()      (TRISDCLR = (1<<14))
-#define LED_ERROR_InputEnable()       (TRISDSET = (1<<14))
-#define LED_ERROR_Get()               ((PORTD >> 14) & 0x1)
-#define LED_ERROR_PIN                  GPIO_PIN_RD14
+/*** Macros for I2C_INT pin ***/
+#define I2C_INT_Get()               ((PORTD >> 15) & 0x1)
+#define I2C_INT_PIN                  GPIO_PIN_RD15
+
+/*** Macros for RX pin ***/
+#define RX_Get()               ((PORTF >> 2) & 0x1)
+#define RX_PIN                  GPIO_PIN_RF2
+
+/*** Macros for TX pin ***/
+#define TX_Get()               ((PORTF >> 8) & 0x1)
+#define TX_PIN                  GPIO_PIN_RF8
 
 /*** Macros for SCL pin ***/
 #define SCL_Get()               ((PORTA >> 14) & 0x1)
@@ -84,22 +92,13 @@
 #define SDA_PIN                  GPIO_PIN_RA15
 
 /*** Macros for LED_START pin ***/
-#define LED_START_Set()               (LATDSET = (1<<12))
-#define LED_START_Clear()             (LATDCLR = (1<<12))
-#define LED_START_Toggle()            (LATDINV= (1<<12))
-#define LED_START_OutputEnable()      (TRISDCLR = (1<<12))
-#define LED_START_InputEnable()       (TRISDSET = (1<<12))
-#define LED_START_Get()               ((PORTD >> 12) & 0x1)
-#define LED_START_PIN                  GPIO_PIN_RD12
-
-/*** Macros for LED_SEND pin ***/
-#define LED_SEND_Set()               (LATDSET = (1<<13))
-#define LED_SEND_Clear()             (LATDCLR = (1<<13))
-#define LED_SEND_Toggle()            (LATDINV= (1<<13))
-#define LED_SEND_OutputEnable()      (TRISDCLR = (1<<13))
-#define LED_SEND_InputEnable()       (TRISDSET = (1<<13))
-#define LED_SEND_Get()               ((PORTD >> 13) & 0x1)
-#define LED_SEND_PIN                  GPIO_PIN_RD13
+#define LED_START_Set()               (LATDSET = (1<<13))
+#define LED_START_Clear()             (LATDCLR = (1<<13))
+#define LED_START_Toggle()            (LATDINV= (1<<13))
+#define LED_START_OutputEnable()      (TRISDCLR = (1<<13))
+#define LED_START_InputEnable()       (TRISDSET = (1<<13))
+#define LED_START_Get()               ((PORTD >> 13) & 0x1)
+#define LED_START_PIN                  GPIO_PIN_RD13
 
 
 // *****************************************************************************
@@ -265,6 +264,7 @@ typedef enum
   CN21_PIN = 1 << 21,
 }CN_PIN;
 
+typedef  void (*GPIO_PIN_CALLBACK) ( CN_PIN cnPin, uintptr_t context);
 
 void GPIO_Initialize(void);
 
@@ -289,6 +289,35 @@ void GPIO_PortToggle(GPIO_PORT port, uint32_t mask);
 void GPIO_PortInputEnable(GPIO_PORT port, uint32_t mask);
 
 void GPIO_PortOutputEnable(GPIO_PORT port, uint32_t mask);
+
+void GPIO_PinInterruptEnable(CN_PIN cnPin);
+
+void GPIO_PinInterruptDisable(CN_PIN cnPin);
+
+// *****************************************************************************
+// *****************************************************************************
+// Section: Local Data types and Prototypes
+// *****************************************************************************
+// *****************************************************************************
+
+typedef struct {
+
+    /* CN Pin number */
+    CN_PIN                  cnPin;
+
+    /* Corresponding GPIO pin name */
+    GPIO_PIN                gpioPin;
+
+    /* previous port pin value, need to be stored to check if it has changed later */
+    bool                    prevPinValue;
+
+    /* Callback for event on target pin*/
+    GPIO_PIN_CALLBACK       callback;
+
+    /* Callback Context */
+    uintptr_t               context;
+
+} GPIO_PIN_CALLBACK_OBJ;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -336,6 +365,11 @@ static inline void GPIO_PinOutputEnable(GPIO_PIN pin)
     GPIO_PortOutputEnable((GPIO_PORT)(pin>>4), 0x1 << (pin & 0xF));
 }
 
+bool GPIO_PinInterruptCallbackRegister(
+    CN_PIN cnPin,
+    const   GPIO_PIN_CALLBACK callBack,
+    uintptr_t context
+);
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
