@@ -46,6 +46,7 @@
 #include "definitions.h"
 #include "device.h"
 #include "app_i2c_ihm.h"
+#include "app_uart.h"
 
 
 
@@ -168,14 +169,11 @@ void SYS_Initialize ( void* data )
     CORETIMER_Initialize();
     I2C1_Initialize();
 	UART1_Initialize();
-    DMAC_Initialize();
+    EVIC_Initialize();
     
     APP_I2C_IHM_Initialize();
     APP_UART_Initialize ();
-
-
-
-    EVIC_Initialize();
+   
 
     /* Enable global interrupts */
     __builtin_enable_interrupts();

@@ -94,11 +94,11 @@ void APP_UART_Tasks ( void )
             }
             else if (appUartData.transferStatus == UART_TRANSFER_STATUS_ERROR)
             {
-                appUartData.state = UART_STATE_XFER_ERROR;
+                appUartData.state = UART_STATE_ERROR;
             }
             break;        
 
-        case UART_STATE_XFER_ERROR:
+        case UART_STATE_ERROR:
 
             appUartData.state = UART_STATE_IDLE;
             break;

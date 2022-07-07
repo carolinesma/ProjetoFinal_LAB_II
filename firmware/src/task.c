@@ -1,21 +1,22 @@
 /*******************************************************************************
- System Interrupts File
-
-  Company:
-    Microchip Technology Inc.
+ System Tasks File
 
   File Name:
-    interrupt.c
+    tasks.c
 
   Summary:
-    Interrupt vectors mapping
+    This file contains source code necessary to maintain system's polled tasks.
 
   Description:
-    This file maps all the interrupt vectors to their corresponding
-    implementations. If a particular module interrupt is used, then its ISR
-    definition can be found in corresponding PLIB source file. If a module
-    interrupt is not used, then its ISR implementation is mapped to dummy
-    handler.
+    This file contains source code necessary to maintain system's polled tasks.
+    It implements the "SYS_Tasks" function that calls the individual "Tasks"
+    functions for all polled MPLAB Harmony modules in the system.
+
+  Remarks:
+    This file requires access to the systemObjects global data structure that
+    contains the object handles to all MPLAB Harmony module objects executing
+    polled in the system.  These handles are passed into the individual module
+    "Tasks" functions to identify the instance of the module to maintain.
  *******************************************************************************/
 
 // DOM-IGNORE-BEGIN
@@ -48,43 +49,42 @@
 // Section: Included Files
 // *****************************************************************************
 // *****************************************************************************
-
-#include "interrupts.h"
 #include "definitions.h"
 
 
 // *****************************************************************************
 // *****************************************************************************
-// Section: System Interrupt Vector Functions
+// Section: System "Tasks" Routine
 // *****************************************************************************
 // *****************************************************************************
 
+/*******************************************************************************
+  Function:
+    void SYS_Tasks ( void )
 
-void UART_1_InterruptHandler( void );
-void I2C_1_InterruptHandler( void );
-void CHANGE_NOTICE_InterruptHandler( void );
-
-
-
-/* All the handlers are defined here.  Each will call its PLIB-specific function. */
-void __ISR(_UART_1_VECTOR, ipl1SOFT) UART_1_Handler (void)
+  Remarks:
+    See prototype in system/common/sys_module.h.
+*/
+void SYS_Tasks ( void )
 {
-    UART_1_InterruptHandler();
+    /* Maintain system services */
+    
+
+
+    /* Maintain Device Drivers */
+    
+
+    /* Maintain Middleware & Other Libraries */
+    
+
+    /* Maintain the application's state machine. */
+  
+    APP_I2C_IHM_Tasks();
+    
+    APP_UART_Tasks( );
 }
-
-void __ISR(_I2C_1_VECTOR, ipl1SOFT) I2C_1_Handler (void)
-{
-    I2C_1_InterruptHandler();
-}
-
-void __ISR(_CHANGE_NOTICE_VECTOR, ipl1SOFT) CHANGE_NOTICE_Handler (void)
-{
-    CHANGE_NOTICE_InterruptHandler();
-}
-
-
-
 
 /*******************************************************************************
  End of File
-*/
+ */
+

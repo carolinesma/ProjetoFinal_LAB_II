@@ -1,4 +1,4 @@
-build/default/production/_ext/1360937237/main.o: ../src/main.c \
+build/default/production/_ext/1360937237/task.o: ../src/task.c \
  ../src/config/default/definitions.h \
  ../src/config/default/peripheral/coretimer/plib_coretimer.h \
  ../src/config/default/peripheral/i2c/master/plib_i2c1_master.h \

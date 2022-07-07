@@ -42,8 +42,7 @@ typedef enum
     I2C_STATE_WAIT_MESSAGE_TRANSFER_COMPLETE,
     I2C_STATE_READ_DATA,
     I2C_STATE_WAIT_READ_COMPLETE,
-    I2C_STATE_XFER_SUCCESSFUL,
-    I2C_STATE_XFER_ERROR,
+    I2C_STATE_ERROR,
 
 } APP_I2C_STATES;
 
@@ -79,6 +78,7 @@ typedef struct
 } APP_IHM_DATA;
 
 void APP_I2C_IHM_Initialize( void );
+
 void APP_I2C_IHM_Tasks( void );
 
 #ifdef	__cplusplus

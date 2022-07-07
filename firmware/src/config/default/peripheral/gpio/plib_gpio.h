@@ -62,14 +62,14 @@
 // *****************************************************************************
 
 
-/*** Macros for LED_CONTROL_I2C pin ***/
-#define LED_CONTROL_I2C_Set()               (LATDSET = (1<<14))
-#define LED_CONTROL_I2C_Clear()             (LATDCLR = (1<<14))
-#define LED_CONTROL_I2C_Toggle()            (LATDINV= (1<<14))
-#define LED_CONTROL_I2C_OutputEnable()      (TRISDCLR = (1<<14))
-#define LED_CONTROL_I2C_InputEnable()       (TRISDSET = (1<<14))
-#define LED_CONTROL_I2C_Get()               ((PORTD >> 14) & 0x1)
-#define LED_CONTROL_I2C_PIN                  GPIO_PIN_RD14
+/*** Macros for I2C_ERRO pin ***/
+#define I2C_ERRO_Set()               (LATDSET = (1<<14))
+#define I2C_ERRO_Clear()             (LATDCLR = (1<<14))
+#define I2C_ERRO_Toggle()            (LATDINV= (1<<14))
+#define I2C_ERRO_OutputEnable()      (TRISDCLR = (1<<14))
+#define I2C_ERRO_InputEnable()       (TRISDSET = (1<<14))
+#define I2C_ERRO_Get()               ((PORTD >> 14) & 0x1)
+#define I2C_ERRO_PIN                  GPIO_PIN_RD14
 
 /*** Macros for I2C_INT pin ***/
 #define I2C_INT_Get()               ((PORTD >> 15) & 0x1)
@@ -91,14 +91,14 @@
 #define SDA_Get()               ((PORTA >> 15) & 0x1)
 #define SDA_PIN                  GPIO_PIN_RA15
 
-/*** Macros for LED_START pin ***/
-#define LED_START_Set()               (LATDSET = (1<<13))
-#define LED_START_Clear()             (LATDCLR = (1<<13))
-#define LED_START_Toggle()            (LATDINV= (1<<13))
-#define LED_START_OutputEnable()      (TRISDCLR = (1<<13))
-#define LED_START_InputEnable()       (TRISDSET = (1<<13))
-#define LED_START_Get()               ((PORTD >> 13) & 0x1)
-#define LED_START_PIN                  GPIO_PIN_RD13
+/*** Macros for UART_ERRO pin ***/
+#define UART_ERRO_Set()               (LATDSET = (1<<13))
+#define UART_ERRO_Clear()             (LATDCLR = (1<<13))
+#define UART_ERRO_Toggle()            (LATDINV= (1<<13))
+#define UART_ERRO_OutputEnable()      (TRISDCLR = (1<<13))
+#define UART_ERRO_InputEnable()       (TRISDSET = (1<<13))
+#define UART_ERRO_Get()               ((PORTD >> 13) & 0x1)
+#define UART_ERRO_PIN                  GPIO_PIN_RD13
 
 
 // *****************************************************************************

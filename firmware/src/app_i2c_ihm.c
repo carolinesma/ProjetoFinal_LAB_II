@@ -91,7 +91,7 @@ void APP_I2C_IHM_Tasks( void )
                 else if (appIhmData.transferStatus == I2C_TRANSFER_STATUS_ERROR)
                 {
                     /* EEPROM is not ready to accept new requests */
-                    appIhmData.state = I2C_STATE_XFER_ERROR;
+                    appIhmData.state = I2C_STATE_ERROR;
                 }
                 break;
 
@@ -109,7 +109,7 @@ void APP_I2C_IHM_Tasks( void )
                 }
                 else if (appIhmData.transferStatus == I2C_TRANSFER_STATUS_ERROR)
                 {
-                    appIhmData.state = I2C_STATE_XFER_ERROR;
+                    appIhmData.state = I2C_STATE_ERROR;
                 }
                 break;
 
@@ -133,23 +133,19 @@ void APP_I2C_IHM_Tasks( void )
                                 
                 APP_UART_Notify(appIhmData.rxBuffer);
                 
-                LED_CONTROL_ON();
-                
                 appIhmData.state = I2C_STATE_READ_DATA;
                 
             }
             else if (appIhmData.transferStatus == I2C_TRANSFER_STATUS_ERROR)
             {
-                appIhmData.state = I2C_STATE_XFER_ERROR;
+                appIhmData.state = I2C_STATE_ERROR;
             }
             break;
         
-        case I2C_STATE_XFER_ERROR:
-        {
-            LED_CONTROL_OFF();
+        case I2C_STATE_ERROR:
             
             break;
-        }
+            
         default:
                 break;
     }    
