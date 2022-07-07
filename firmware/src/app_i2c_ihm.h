@@ -30,10 +30,10 @@ extern "C" {
 #define LED_CONTROL_OFF()                      LED_CONTROL_I2C_Clear()
 
 #define ARDUINO_IHM_ADDR        0x0A
-#define TX_DATA_LENGTH          1
+#define TX_DATA_LENGTH          8
+#define RX_DATA_LENGTH          1
 #define ACK_DATA_LENGTH         1
 #define IHM_WANT_SEND_DATA      1    
-#define RX_DATA_LENGTH          1
     
 typedef enum
 {
@@ -42,7 +42,6 @@ typedef enum
     I2C_STATE_WAIT_READ_COMPLETE,
     I2C_STATE_WRITE_DATA,
     I2C_STATE_WAIT_WRITE_COMPLETE,
-    I2C_STATE_CHECK_INTERNAL_WRITE_STATUS,
     I2C_STATE_VERIFY,
     I2C_STATE_IDLE_APP,
     I2C_STATE_XFER_SUCCESSFUL,

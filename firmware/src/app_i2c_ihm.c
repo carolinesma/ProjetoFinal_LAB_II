@@ -11,9 +11,12 @@
 // *****************************************************************************
 // *****************************************************************************
 
-
-
 APP_IHM_DATA appIhmData;
+
+static uint8_t testTxData[TX_DATA_LENGTH] =
+{
+    "Lendo..."
+};
 
 void APP_I2C_IHM_Initialize(void)
 {
@@ -75,6 +78,37 @@ void APP_I2C_IHM_Tasks( void )
             appIhmData.state = I2C_STATE_READ_DATA;
             
             break;
+            
+        case I2C_STATE_WRITE:
+
+                if (appIhmData.transferStatus == I2C_TRANSFER_STATUS_SUCCESS)
+                {
+                    /* Write data to EEPROM */
+                    appIhmData.transferStatus = I2C_TRANSFER_STATUS_IN_PROGRESS;
+                    I2C1_Write(ARDUINO_IHM_ADDR, &testTxData[0], TX_DATA_LENGTH);
+                    appIhmData.state = I2C_STATE_WAIT_WRITE_COMPLETE;
+                }
+                else if (appIhmData.transferStatus == I2C_TRANSFER_STATUS_ERROR)
+                {
+                    /* EEPROM is not ready to accept new requests */
+                    appIhmData.state = I2C_STATE_XFER_ERROR;
+                }
+                break;
+
+            case I2C_STATE_WAIT_WRITE_COMPLETE:
+
+                if (appIhmData.transferStatus == I2C_TRANSFER_STATUS_SUCCESS)
+                {
+                    /* Read the status of internal write cycle */
+                    appIhmData.transferStatus = I2C_TRANSFER_STATUS_IN_PROGRESS;
+                    I2C1_Write(ARDUINO_IHM_ADDR, &appIhmData.ackData, ACK_DATA_LENGTH);
+                    appIhmData.state = I2C_STATE_READ_DATA;
+                }
+                else if (appIhmData.transferStatus == I2C_TRANSFER_STATUS_ERROR)
+                {
+                    appIhmData.state = I2C_STATE_XFER_ERROR;
+                }
+                break;
 
         case I2C_STATE_READ_DATA:
             
