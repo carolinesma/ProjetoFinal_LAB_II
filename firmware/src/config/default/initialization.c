@@ -171,7 +171,7 @@ void SYS_Initialize ( void* data )
     DMAC_Initialize();
     
     APP_I2C_IHM_Initialize();
-
+    APP_UART_Initialize ();
 
 
 

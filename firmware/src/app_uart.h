@@ -24,32 +24,50 @@
 extern "C" {
 #endif
 
-#define APP_DATA_SIZE   1
+#define DATA_LENGTH             1
+#define ACK_DATA_LENGTH         1
     
 typedef enum
 {
-    APP_STATE_INIT,
-    APP_STATE_TRANSMIT_MESSAGE,
-    APP_STATE_WAIT_MESSAGE_TRANSFER_COMPLETE,
-    APP_STATE_RECEIVE_DATA,
-    APP_STATE_WAIT_RECEIVE_COMPLETE,
-    APP_STATE_TRANSMIT_DATA,
-    APP_STATE_WAIT_TRANSMIT_COMPLETE,
-    APP_STATE_ERROR,
-    APP_STATE_IDLE,
+    UART_STATE_INIT,
+    UART_STATE_TRANSMIT_MESSAGE,
+    UART_STATE_WAIT_MESSAGE_TRANSFER_COMPLETE,
+    UART_STATE_RECEIVE_DATA,
+    UART_STATE_WAIT_RECEIVE_COMPLETE,
+    UART_STATE_TRANSMIT_DATA,
+    UART_STATE_WAIT_TRANSMIT_COMPLETE,
+    UART_STATE_ERROR,
+    UART_STATE_XFER_ERROR,
+    UART_STATE_IDLE,
+            
 
-} APP_STATES;
+} APP_UART_STATES;
+
+typedef enum
+{
+    UART_TRANSFER_STATUS_IN_PROGRESS,
+    UART_TRANSFER_STATUS_SUCCESS,
+    UART_TRANSFER_STATUS_ERROR,
+    UART_TRANSFER_STATUS_IDLE,
+
+} APP_UART_TRANSFER_STATUS;
 
 typedef struct
 {
-    APP_STATES              state;
-    char                    readBuffer[APP_DATA_SIZE];
-    volatile bool           transferStatus;
-} APP_DATA;
+    APP_UART_STATES                       state;
+    uint8_t                               readBuffer[DATA_LENGTH];
+    uint8_t                               writeBuffer[DATA_LENGTH];
+    volatile APP_UART_TRANSFER_STATUS     transferStatus;
+    bool                                  isdataReady;
+    uint8_t                               ackData;
+    
+} APP_UART_DATA;
 
-void APP_Initialize ( void );
+void APP_UART_Notify(uint8_t data[DATA_LENGTH]);
 
-void APP_Tasks( void );
+void APP_UART_Initialize ( void );
+
+void APP_UART_Tasks( void );
 
 
 #ifdef	__cplusplus

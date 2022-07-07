@@ -12,7 +12,7 @@ build/default/production/_ext/1171490990/interrupts.o: \
  ../src/config/default/peripheral/gpio/plib_gpio.h \
  ../src/config/default/peripheral/evic/plib_evic.h \
  ../src/config/default/peripheral/dmac/plib_dmac.h ../src/app_i2c_ihm.h \
- ../src/config/default/definitions.h
+ ../src/config/default/definitions.h ../src/app_uart.h
 
 ../src/config/default/interrupts.h:
 
@@ -43,3 +43,5 @@ build/default/production/_ext/1171490990/interrupts.o: \
 ../src/app_i2c_ihm.h:
 
 ../src/config/default/definitions.h:
+
+../src/app_uart.h:

@@ -19,17 +19,25 @@
 #include <stdlib.h>                     // Defines EXIT_FAILURE
 #include <string.h>
 #include "definitions.h"                // SYS function prototypes
+#include "app_uart.h"
 
 
 #ifdef	__cplusplus
 extern "C" {
 #endif
 
+#define LED_CONTROL_ON()                       LED_CONTROL_I2C_Set()
+#define LED_CONTROL_OFF()                      LED_CONTROL_I2C_Clear()
+
+#define ARDUINO_IHM_ADDR        0x0A
+#define TX_DATA_LENGTH          1
+#define ACK_DATA_LENGTH         1
+#define IHM_WANT_SEND_DATA      1    
 #define RX_DATA_LENGTH          1
     
 typedef enum
 {
-    I2C_STATE_STATUS_VERIFY,
+    I2C_STATE_INIT,
     I2C_STATE_READ_DATA,
     I2C_STATE_WAIT_READ_COMPLETE,
     I2C_STATE_WRITE_DATA,
@@ -49,14 +57,14 @@ typedef enum
     I2C_TRANSFER_STATUS_ERROR,
     I2C_TRANSFER_STATUS_IDLE,
 
-} I2C_TRANSFER_STATUS;
+} APP_I2C_TRANSFER_STATUS;
 
 typedef enum
 {
     IHM_INT_STATE,
     IHM_NO_INT_STATE,
 
-} IHM_INTERRUPT_STATUS;
+} APP_IHM_INTERRUPT_STATUS;
 
 typedef struct
 {
@@ -65,9 +73,9 @@ typedef struct
 
     uint8_t  rxBuffer[RX_DATA_LENGTH];
 
-    volatile I2C_TRANSFER_STATUS transferStatus;
+    volatile APP_I2C_TRANSFER_STATUS transferStatus;
     
-    volatile IHM_INTERRUPT_STATUS ihmStatus ;
+    volatile APP_IHM_INTERRUPT_STATUS ihmStatus ;
     
     uint8_t ackData;
 
