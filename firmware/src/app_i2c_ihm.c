@@ -143,7 +143,7 @@ void APP_I2C_IHM_Tasks( void )
             break;
         
         case I2C_STATE_ERROR:
-            
+            I2C_ERRO_Set(); //RD14
             break;
             
         default:

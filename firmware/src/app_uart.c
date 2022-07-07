@@ -104,6 +104,7 @@ void APP_UART_Tasks ( void )
             break;
             
         case UART_STATE_IDLE:
+            UART_ERRO_Set(); //RD13
             
         default:
             break;
