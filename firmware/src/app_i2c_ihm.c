@@ -75,18 +75,18 @@ void APP_I2C_IHM_Tasks( void )
             appIhmData.transferStatus = I2C_TRANSFER_STATUS_IN_PROGRESS;
             I2C1_Write(ARDUINO_IHM_ADDR, &appIhmData.ackData, ACK_DATA_LENGTH);
 
-            appIhmData.state = I2C_STATE_READ_DATA;
+            appIhmData.state = I2C_STATE_TRANSMIT_MESSAGE;
             
             break;
             
-        case I2C_STATE_WRITE:
+        case I2C_STATE_TRANSMIT_MESSAGE:
 
                 if (appIhmData.transferStatus == I2C_TRANSFER_STATUS_SUCCESS)
                 {
                     /* Write data to EEPROM */
                     appIhmData.transferStatus = I2C_TRANSFER_STATUS_IN_PROGRESS;
                     I2C1_Write(ARDUINO_IHM_ADDR, &testTxData[0], TX_DATA_LENGTH);
-                    appIhmData.state = I2C_STATE_WAIT_WRITE_COMPLETE;
+                    appIhmData.state = I2C_STATE_WAIT_MESSAGE_TRANSFER_COMPLETE;
                 }
                 else if (appIhmData.transferStatus == I2C_TRANSFER_STATUS_ERROR)
                 {
@@ -95,14 +95,17 @@ void APP_I2C_IHM_Tasks( void )
                 }
                 break;
 
-            case I2C_STATE_WAIT_WRITE_COMPLETE:
+            case I2C_STATE_WAIT_MESSAGE_TRANSFER_COMPLETE:
 
                 if (appIhmData.transferStatus == I2C_TRANSFER_STATUS_SUCCESS)
                 {
-                    /* Read the status of internal write cycle */
-                    appIhmData.transferStatus = I2C_TRANSFER_STATUS_IN_PROGRESS;
-                    I2C1_Write(ARDUINO_IHM_ADDR, &appIhmData.ackData, ACK_DATA_LENGTH);
-                    appIhmData.state = I2C_STATE_READ_DATA;
+                    if (appIhmData.ihmStatus == IHM_INT_STATE){
+                        /* Read the status of internal write cycle */
+                        appIhmData.transferStatus = I2C_TRANSFER_STATUS_IN_PROGRESS;
+                        I2C1_Write(ARDUINO_IHM_ADDR, &appIhmData.ackData, ACK_DATA_LENGTH);
+                        appIhmData.state = I2C_STATE_READ_DATA;
+                    }
+                    else appIhmData.state = I2C_STATE_READ_DATA;
                 }
                 else if (appIhmData.transferStatus == I2C_TRANSFER_STATUS_ERROR)
                 {
@@ -112,21 +115,15 @@ void APP_I2C_IHM_Tasks( void )
 
         case I2C_STATE_READ_DATA:
             
-            if (appIhmData.ihmStatus == IHM_INT_STATE)
-            {
-                /* Request data from arduino */
-                appIhmData.transferStatus = I2C_TRANSFER_STATUS_IN_PROGRESS;
-                
-                I2C1_Read(ARDUINO_IHM_ADDR, &appIhmData.rxBuffer[0], RX_DATA_LENGTH);
-                
-                appIhmData.state = I2C_STATE_WAIT_READ_COMPLETE;
-                
-                appIhmData.ihmStatus = IHM_NO_INT_STATE;
-            }
-            else if (appIhmData.ihmStatus != IHM_INT_STATE)
-            {
-                appIhmData.state = I2C_STATE_READ_DATA;
-            }
+            /* Request data from arduino */
+            appIhmData.transferStatus = I2C_TRANSFER_STATUS_IN_PROGRESS;
+
+            I2C1_Read(ARDUINO_IHM_ADDR, &appIhmData.rxBuffer[0], RX_DATA_LENGTH);
+
+            appIhmData.state = I2C_STATE_WAIT_READ_COMPLETE;
+
+            appIhmData.ihmStatus = IHM_NO_INT_STATE;
+            
             break;
 
         case I2C_STATE_WAIT_READ_COMPLETE:

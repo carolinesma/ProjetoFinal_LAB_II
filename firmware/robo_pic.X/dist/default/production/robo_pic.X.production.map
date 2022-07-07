@@ -7,111 +7,111 @@ Archive member included to satisfy reference by file (symbol)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
                               build/default/production/_ext/513455433/plib_i2c1_master.o (__floatunsisf)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccgzvOum.o (_on_reset)
+                              C:\Users\Caroline\AppData\Local\Temp\cc0vTRoY.o (_on_reset)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccgzvOum.o (_on_bootstrap)
+                              C:\Users\Caroline\AppData\Local\Temp\cc0vTRoY.o (_on_bootstrap)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccgzvOum.o (_nmi_handler)
+                              C:\Users\Caroline\AppData\Local\Temp\cc0vTRoY.o (_nmi_handler)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(pic32_data_init.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccgzvOum.o (__pic32_data_init)
+                              C:\Users\Caroline\AppData\Local\Temp\cc0vTRoY.o (__pic32_data_init)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(general-exception.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccgzvOum.o (_general_exception_context)
+                              C:\Users\Caroline\AppData\Local\Temp\cc0vTRoY.o (_general_exception_context)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector0.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_0)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_0)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector1.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_1)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_1)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector2.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_2)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_2)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector3.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_3)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_3)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector4.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_4)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_4)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector5.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_5)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_5)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector6.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_6)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_6)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector7.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_7)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_7)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector8.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_8)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_8)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector9.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_9)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_9)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector10.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_10)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_10)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector11.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_11)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_11)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector12.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_12)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_12)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector13.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_13)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_13)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector14.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_14)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_14)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector15.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_15)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_15)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector16.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_16)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_16)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector17.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_17)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_17)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector18.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_18)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_18)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector19.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_19)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_19)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector20.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_20)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_20)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector21.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_21)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_21)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector22.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_22)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_22)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector23.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_23)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_23)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector27.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_27)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_27)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector28.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_28)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_28)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector29.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_29)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_29)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector30.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_30)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_30)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector31.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_31)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_31)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector32.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_32)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_32)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector33.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_33)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_33)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector34.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_34)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_34)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector35.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_35)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_35)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector37.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_37)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_37)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector38.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_38)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_38)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector39.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_39)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_39)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector40.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_40)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_40)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector41.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_41)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_41)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector42.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_42)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_42)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector43.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_43)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_43)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector44.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_44)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_44)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector45.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_45)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_45)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector46.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_46)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_46)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector47.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_47)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_47)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector48.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_48)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_48)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector49.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_49)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_49)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector50.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_50)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_50)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector51.o)
-                              C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o (__vector_dispatch_51)
+                              C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o (__vector_dispatch_51)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
                               c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector0.o) (_DefaultInterrupt)
 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dp32mul.o)
@@ -479,7 +479,7 @@ Discarded input sections
  .text.APP_I2C_IHM_I2CCallback
                 0x0000000000000000       0x78 build/default/production/_ext/1360937237/app_i2c_ihm.o
  .text.APP_I2C_IHM_Tasks
-                0x0000000000000000      0x27c build/default/production/_ext/1360937237/app_i2c_ihm.o
+                0x0000000000000000      0x26c build/default/production/_ext/1360937237/app_i2c_ihm.o
  .text          0x0000000000000000        0x0 build/default/production/_ext/1360937237/app_uart.o
  .data          0x0000000000000000        0x0 build/default/production/_ext/1360937237/app_uart.o
  .reginfo       0x0000000000000000       0x18 build/default/production/_ext/1360937237/app_uart.o
@@ -490,26 +490,26 @@ Discarded input sections
  .text.APP_UART_Notify
                 0x0000000000000000       0x1c build/default/production/_ext/1360937237/app_uart.o
  .text.APP_UART_Tasks
-                0x0000000000000000      0x10c build/default/production/_ext/1360937237/app_uart.o
- .text          0x0000000000000000        0x0 C:\Users\Caroline\AppData\Local\Temp\ccgzvOum.o
- .data          0x0000000000000000        0x0 C:\Users\Caroline\AppData\Local\Temp\ccgzvOum.o
- .bss           0x0000000000000000        0x0 C:\Users\Caroline\AppData\Local\Temp\ccgzvOum.o
- .reginfo       0x0000000000000000       0x18 C:\Users\Caroline\AppData\Local\Temp\ccgzvOum.o
+                0x0000000000000000      0x108 build/default/production/_ext/1360937237/app_uart.o
+ .text          0x0000000000000000        0x0 C:\Users\Caroline\AppData\Local\Temp\cc0vTRoY.o
+ .data          0x0000000000000000        0x0 C:\Users\Caroline\AppData\Local\Temp\cc0vTRoY.o
+ .bss           0x0000000000000000        0x0 C:\Users\Caroline\AppData\Local\Temp\cc0vTRoY.o
+ .reginfo       0x0000000000000000       0x18 C:\Users\Caroline\AppData\Local\Temp\cc0vTRoY.o
  .MIPS.abiflags
-                0x0000000000000000       0x18 C:\Users\Caroline\AppData\Local\Temp\ccgzvOum.o
- .text          0x0000000000000000        0x0 C:\Users\Caroline\AppData\Local\Temp\ccHe9yZC.o
- .data          0x0000000000000000        0x0 C:\Users\Caroline\AppData\Local\Temp\ccHe9yZC.o
- .bss           0x0000000000000000        0x0 C:\Users\Caroline\AppData\Local\Temp\ccHe9yZC.o
- .reginfo       0x0000000000000000       0x18 C:\Users\Caroline\AppData\Local\Temp\ccHe9yZC.o
+                0x0000000000000000       0x18 C:\Users\Caroline\AppData\Local\Temp\cc0vTRoY.o
+ .text          0x0000000000000000        0x0 C:\Users\Caroline\AppData\Local\Temp\ccOrx7Y4.o
+ .data          0x0000000000000000        0x0 C:\Users\Caroline\AppData\Local\Temp\ccOrx7Y4.o
+ .bss           0x0000000000000000        0x0 C:\Users\Caroline\AppData\Local\Temp\ccOrx7Y4.o
+ .reginfo       0x0000000000000000       0x18 C:\Users\Caroline\AppData\Local\Temp\ccOrx7Y4.o
  .MIPS.abiflags
-                0x0000000000000000       0x18 C:\Users\Caroline\AppData\Local\Temp\ccHe9yZC.o
- .text          0x0000000000000000        0x0 C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o
- .data          0x0000000000000000        0x0 C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o
- .bss           0x0000000000000000        0x0 C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o
- .reginfo       0x0000000000000000       0x18 C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o
+                0x0000000000000000       0x18 C:\Users\Caroline\AppData\Local\Temp\ccOrx7Y4.o
+ .text          0x0000000000000000        0x0 C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o
+ .data          0x0000000000000000        0x0 C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o
+ .bss           0x0000000000000000        0x0 C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o
+ .reginfo       0x0000000000000000       0x18 C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o
  .MIPS.abiflags
-                0x0000000000000000       0x18 C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o
- .discard       0x0000000000000000       0xd0 C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o
+                0x0000000000000000       0x18 C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o
+ .discard       0x0000000000000000       0xd0 C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o
  .data          0x0000000000000000        0x0 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\pic32_software_reset.o
  .bss           0x0000000000000000        0x0 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\pic32_software_reset.o
  .reginfo       0x0000000000000000       0x18 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\pic32_software_reset.o
@@ -1207,16 +1207,16 @@ END GROUP
 
 .reset          0x00000000bfc00000      0x19c
  *(.reset)
- .reset         0x00000000bfc00000        0x8 C:\Users\Caroline\AppData\Local\Temp\ccgzvOum.o
+ .reset         0x00000000bfc00000        0x8 C:\Users\Caroline\AppData\Local\Temp\cc0vTRoY.o
                 0x00000000bfc00000                _reset
  *(.reset.startup)
  .reset.startup
-                0x00000000bfc00008      0x194 C:\Users\Caroline\AppData\Local\Temp\ccgzvOum.o
+                0x00000000bfc00008      0x194 C:\Users\Caroline\AppData\Local\Temp\cc0vTRoY.o
                 0x00000000bfc00008                _startup
 
 .bev_excpt      0x00000000bfc00380       0x10
  *(.bev_handler)
- .bev_handler   0x00000000bfc00380       0x10 C:\Users\Caroline\AppData\Local\Temp\ccgzvOum.o
+ .bev_handler   0x00000000bfc00380       0x10 C:\Users\Caroline\AppData\Local\Temp\cc0vTRoY.o
 
 .dbg_excpt      0x00000000bfc00480        0x0
                 0x00000000bfc00480                . = (. + DEFINED (_DEBUGGER)?0x8:0x0)
@@ -1226,7 +1226,7 @@ END GROUP
 
 .app_excpt      0x000000009fc01180       0x10
  *(.gen_handler)
- .gen_handler   0x000000009fc01180       0x10 C:\Users\Caroline\AppData\Local\Temp\ccgzvOum.o
+ .gen_handler   0x000000009fc01180       0x10 C:\Users\Caroline\AppData\Local\Temp\cc0vTRoY.o
 
 .vector_0       0x000000009fc01200        0x8
  *(.vector_0)
@@ -1899,7 +1899,7 @@ END GROUP
  *.elf(.debug_pubnames)
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000     0x4450
+.debug_info     0x0000000000000000     0x43db
  *.elf(.debug_info .gnu.linkonce.wi.*)
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000      0x39a build/default/production/_ext/60165520/plib_clk.o
@@ -1914,12 +1914,12 @@ END GROUP
  .debug_info    0x0000000000003557      0x150 build/default/production/_ext/1171490990/interrupts.o
  .debug_info    0x00000000000036a7      0x13f build/default/production/_ext/1171490990/exceptions.o
  .debug_info    0x00000000000037e6       0xc7 build/default/production/_ext/1360937237/main.o
- .debug_info    0x00000000000038ad      0x78e build/default/production/_ext/1360937237/app_i2c_ihm.o
- .debug_info    0x000000000000403b      0x2ba build/default/production/_ext/1360937237/app_uart.o
- .debug_info    0x00000000000042f5       0x9d c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
- .debug_info    0x0000000000004392       0x3f c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
- .debug_info    0x00000000000043d1       0x3f c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
- .debug_info    0x0000000000004410       0x40 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+ .debug_info    0x00000000000038ad      0x731 build/default/production/_ext/1360937237/app_i2c_ihm.o
+ .debug_info    0x0000000000003fde      0x2a2 build/default/production/_ext/1360937237/app_uart.o
+ .debug_info    0x0000000000004280       0x9d c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
+ .debug_info    0x000000000000431d       0x3f c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_info    0x000000000000435c       0x3f c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_info    0x000000000000439b       0x40 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
 .debug_abbrev   0x0000000000000000     0x1464
  *.elf(.debug_abbrev)
@@ -1943,7 +1943,7 @@ END GROUP
  .debug_abbrev  0x0000000000001405       0x2e c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
  .debug_abbrev  0x0000000000001433       0x31 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
-.debug_line     0x0000000000000000     0x33d3
+.debug_line     0x0000000000000000     0x33c8
  *.elf(.debug_line)
  *(.debug_line)
  .debug_line    0x0000000000000000      0x194 build/default/production/_ext/60165520/plib_clk.o
@@ -1958,12 +1958,12 @@ END GROUP
  .debug_line    0x000000000000283e       0xea build/default/production/_ext/1171490990/interrupts.o
  .debug_line    0x0000000000002928       0xc2 build/default/production/_ext/1171490990/exceptions.o
  .debug_line    0x00000000000029ea       0xd3 build/default/production/_ext/1360937237/main.o
- .debug_line    0x0000000000002abd      0x40e build/default/production/_ext/1360937237/app_i2c_ihm.o
- .debug_line    0x0000000000002ecb      0x22d build/default/production/_ext/1360937237/app_uart.o
- .debug_line    0x00000000000030f8       0xbc c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
- .debug_line    0x00000000000031b4       0xa8 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
- .debug_line    0x000000000000325c       0xac c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
- .debug_line    0x0000000000003308       0xcb c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+ .debug_line    0x0000000000002abd      0x40b build/default/production/_ext/1360937237/app_i2c_ihm.o
+ .debug_line    0x0000000000002ec8      0x225 build/default/production/_ext/1360937237/app_uart.o
+ .debug_line    0x00000000000030ed       0xbc c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
+ .debug_line    0x00000000000031a9       0xa8 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_line    0x0000000000003251       0xac c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_line    0x00000000000032fd       0xcb c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
 .debug_frame    0x0000000000000000      0x990
  *.elf(.debug_frame)
@@ -1987,7 +1987,7 @@ END GROUP
  .debug_frame   0x0000000000000950       0x20 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
  .debug_frame   0x0000000000000970       0x20 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
-.debug_str      0x0000000000000000     0x671f
+.debug_str      0x0000000000000000     0x6578
  *.elf(.debug_str)
  *(.debug_str)
  .debug_str     0x0000000000000000      0x410 build/default/production/_ext/60165520/plib_clk.o
@@ -2002,12 +2002,12 @@ END GROUP
  .debug_str     0x0000000000003e2e      0x388 build/default/production/_ext/1171490990/interrupts.o
  .debug_str     0x00000000000041b6      0x3cf build/default/production/_ext/1171490990/exceptions.o
  .debug_str     0x0000000000004585      0x2e1 build/default/production/_ext/1360937237/main.o
- .debug_str     0x0000000000004866      0xc54 build/default/production/_ext/1360937237/app_i2c_ihm.o
- .debug_str     0x00000000000054ba      0x559 build/default/production/_ext/1360937237/app_uart.o
- .debug_str     0x0000000000005a13      0x2f1 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
- .debug_str     0x0000000000005d04      0x353 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
- .debug_str     0x0000000000006057      0x35b c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
- .debug_str     0x00000000000063b2      0x36d c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+ .debug_str     0x0000000000004866      0xb2c build/default/production/_ext/1360937237/app_i2c_ihm.o
+ .debug_str     0x0000000000005392      0x4da build/default/production/_ext/1360937237/app_uart.o
+ .debug_str     0x000000000000586c      0x2f1 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
+ .debug_str     0x0000000000005b5d      0x353 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_str     0x0000000000005eb0      0x35b c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_str     0x000000000000620b      0x36d c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
 .debug_loc      0x0000000000000000     0x168c
  *.elf(.debug_loc)
@@ -2101,11 +2101,11 @@ END GROUP
  .gnu.attributes
                 0x00000000000000e0       0x10 build/default/production/_ext/1360937237/app_uart.o
  .gnu.attributes
-                0x00000000000000f0       0x10 C:\Users\Caroline\AppData\Local\Temp\ccgzvOum.o
+                0x00000000000000f0       0x10 C:\Users\Caroline\AppData\Local\Temp\cc0vTRoY.o
  .gnu.attributes
-                0x0000000000000100       0x10 C:\Users\Caroline\AppData\Local\Temp\ccHe9yZC.o
+                0x0000000000000100       0x10 C:\Users\Caroline\AppData\Local\Temp\ccOrx7Y4.o
  .gnu.attributes
-                0x0000000000000110       0x10 C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o
+                0x0000000000000110       0x10 C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o
  .gnu.attributes
                 0x0000000000000120       0x10 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\pic32_software_reset.o
  .gnu.attributes
@@ -2235,9 +2235,9 @@ END GROUP
  .gnu.attributes
                 0x0000000000000510       0x10 c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(sitofp.o)
                 0x0000000000000200                _min_heap_size = 0x200
-LOAD C:\Users\Caroline\AppData\Local\Temp\ccgzvOum.o
-LOAD C:\Users\Caroline\AppData\Local\Temp\ccHe9yZC.o
-LOAD C:\Users\Caroline\AppData\Local\Temp\ccKz6Jpr.o
+LOAD C:\Users\Caroline\AppData\Local\Temp\cc0vTRoY.o
+LOAD C:\Users\Caroline\AppData\Local\Temp\ccOrx7Y4.o
+LOAD C:\Users\Caroline\AppData\Local\Temp\ccM4QAiE.o
 LOAD c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\pic32_software_reset.o
 LOAD c:/program files/microchip/xc32/v4.10/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a
 START GROUP
@@ -2390,7 +2390,7 @@ LOAD data_init
 .text.main_entry
                 0x000000009d0013f4       0x54
  .text.main_entry
-                0x000000009d0013f4       0x54 C:\Users\Caroline\AppData\Local\Temp\ccgzvOum.o
+                0x000000009d0013f4       0x54 C:\Users\Caroline\AppData\Local\Temp\cc0vTRoY.o
                 0x000000009d001428                __crt0_exit
 
 .vector_default
