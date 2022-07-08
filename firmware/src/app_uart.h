@@ -24,9 +24,8 @@
 extern "C" {
 #endif
 
-#define DATA_LENGTH             1
-#define ACK_DATA_LENGTH         1
-    
+#define UART_TX_DATA_LENGTH          8
+
 typedef enum
 {
     UART_STATE_INIT,
@@ -50,15 +49,13 @@ typedef enum
 typedef struct
 {
     APP_UART_STATES                       state;
-    uint8_t                               readBuffer[DATA_LENGTH];
-    uint8_t                               writeBuffer[DATA_LENGTH];
+    uint8_t                               txBuffer[UART_TX_DATA_LENGTH];
     volatile APP_UART_TRANSFER_STATUS     transferStatus;
     bool                                  isdataReady;
-    uint8_t                               ackData;
     
 } APP_UART_DATA;
 
-void APP_UART_Notify(uint8_t data[DATA_LENGTH]);
+void APP_UART_Notify(uint8_t data[]);
 
 void APP_UART_Initialize ( void );
 

@@ -82,7 +82,6 @@ void GPIO_Initialize ( void )
     /* PORTG Initialization */
 
 
-    CNPUESET = 0x200000; /* Pull-Up Enable */
     /* Change Notice Enable */
     CNCONSET = _CNCON_ON_MASK;
     IEC1SET = _IEC1_CNIE_MASK;

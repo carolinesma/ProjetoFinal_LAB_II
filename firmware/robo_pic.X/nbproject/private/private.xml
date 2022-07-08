@@ -6,6 +6,7 @@
             <file>file:/C:/Users/Caroline/HarmonyProjects/labii_robo/firmware/src/main.c</file>
             <file>file:/C:/Users/Caroline/HarmonyProjects/labii_robo/firmware/src/app_uart.h</file>
             <file>file:/C:/Users/Caroline/HarmonyProjects/labii_robo/firmware/src/app_i2c_ihm.h</file>
+            <file>file:/C:/Users/Caroline/HarmonyProjects/labii_robo/firmware/src/config/default/peripheral/i2c/master/plib_i2c1_master.h</file>
             <file>file:/C:/Users/Caroline/HarmonyProjects/labii_robo/firmware/src/app_uart.c</file>
             <file>file:/C:/Users/Caroline/HarmonyProjects/labii_robo/firmware/src/app_i2c_ihm.c</file>
         </group>

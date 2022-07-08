@@ -24,20 +24,16 @@
 
 #ifdef	__cplusplus
 extern "C" {
-#endif
+#endif 
 
-#define LED_CONTROL_ON()                       LED_CONTROL_I2C_Set()
-#define LED_CONTROL_OFF()                      LED_CONTROL_I2C_Clear()
+#define  TX_DATA_LENGTH         3
+#define  RX_DATA_LENGTH         8
 
-#define ARDUINO_IHM_ADDR        0x0A
-#define TX_DATA_LENGTH          8
-#define RX_DATA_LENGTH          1
-#define ACK_DATA_LENGTH         1
-#define IHM_WANT_SEND_DATA      1    
     
 typedef enum
 {
     I2C_STATE_INIT,
+    I2C_STATE_WAIT_IHM,
     I2C_STATE_TRANSMIT_MESSAGE,
     I2C_STATE_WAIT_MESSAGE_TRANSFER_COMPLETE,
     I2C_STATE_READ_DATA,
@@ -55,25 +51,14 @@ typedef enum
 
 } APP_I2C_TRANSFER_STATUS;
 
-typedef enum
-{
-    IHM_INT_STATE,
-    IHM_NO_INT_STATE,
-
-} APP_IHM_INTERRUPT_STATUS;
 
 typedef struct
 {
-    /* Application's current state */
-    APP_I2C_STATES  state;
-
-    uint8_t  rxBuffer[RX_DATA_LENGTH];
-
-    volatile APP_I2C_TRANSFER_STATUS transferStatus;
-    
-    volatile APP_IHM_INTERRUPT_STATUS ihmStatus ;
-    
-    uint8_t ackData;
+    APP_I2C_STATES                      state;
+    /*Buffer para receber a string da IHM*/
+    uint8_t                             rxBuffer[RX_DATA_LENGTH];
+    volatile APP_I2C_TRANSFER_STATUS    transferStatus;
+    uint8_t                             ackData;
 
 } APP_IHM_DATA;
 
