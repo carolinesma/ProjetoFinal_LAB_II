@@ -21,7 +21,7 @@ void APP_UART_Initialize ( void )
 }
 
 void APP_UART_Notify(uint8_t movString[RX_DATA_LENGTH])
-{
+{   
     memcpy(&appUartData.txBuffer, movString, RX_DATA_LENGTH);
     appUartData.isdataReady = true;
 }
@@ -44,24 +44,21 @@ void APP_UART_Tasks ( void )
             break;
 
         case UART_STATE_TRANSMIT_DATA:
-
-            appUartData.transferStatus = UART_TRANSFER_STATUS_IN_PROGRESS;
+            if( appUartData.isdataReady == true) {
+                
+                appUartData.isdataReady = false;
             
-            UART1_Write(&appUartData.txBuffer, TX_DATA_LENGTH);
-            
-            appUartData.state = UART_STATE_WAIT_TRANSMIT_COMPLETE;
-            
+                appUartData.transferStatus = UART_TRANSFER_STATUS_IN_PROGRESS;
+                UART1_Write(&appUartData.txBuffer, TX_DATA_LENGTH);
+                appUartData.state = UART_STATE_WAIT_TRANSMIT_COMPLETE;
+            }
             break;
 
         case UART_STATE_WAIT_TRANSMIT_COMPLETE:
-            if(appUartData.transferStatus == UART_TRANSFER_STATUS_SUCCESS)
-            {
-                appUartData.transferStatus = UART_TRANSFER_STATUS_ERROR;
-                
+            if(appUartData.transferStatus == UART_TRANSFER_STATUS_SUCCESS) {
                 appUartData.state = UART_STATE_TRANSMIT_DATA;
             }
-            else if (appUartData.transferStatus == UART_TRANSFER_STATUS_ERROR)
-            {
+            else if (appUartData.transferStatus == UART_TRANSFER_STATUS_ERROR) {
                 appUartData.state = UART_STATE_ERROR;
             }
             break;        

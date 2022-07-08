@@ -4,6 +4,7 @@
 // *****************************************************************************
 // *****************************************************************************
 
+#include <stdio.h>
 #include "app_i2c_ihm.h"
 
 // *****************************************************************************
@@ -11,7 +12,7 @@
 // Section: Global Data Definitions
 // *****************************************************************************
 // *****************************************************************************
-#define ARDUINO_IHM_ADDR        0x0A
+#define ARDUINO_IHM_ADDR        0x0A >> 1
 #define ACK_DATA_LENGTH         1
 #define IHM_WANT_SEND_DATA      1
 
@@ -60,7 +61,7 @@ void APP_I2C_IHM_Tasks( void )
     switch (appIhmData.state)
     {
         case I2C_STATE_INIT:
-            
+            printf("TESTE");
             GPIO_PinInterruptCallbackRegister(I2C_INT_PIN, (GPIO_PIN_CALLBACK)APP_I2C_IHM_IntSlave, (uintptr_t)&appIhmData.state);
             GPIO_PinInterruptEnable(I2C_INT_PIN);
             
