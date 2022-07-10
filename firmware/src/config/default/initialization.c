@@ -166,13 +166,17 @@ void SYS_Initialize ( void* data )
 
 
 	GPIO_Initialize();
+    
     I2C1_Initialize();
 	UART1_Initialize();
-    EVIC_Initialize();
     
     APP_I2C_IHM_Initialize();
     APP_UART_Initialize ();
    
+
+
+
+    EVIC_Initialize();
 
     /* Enable global interrupts */
     __builtin_enable_interrupts();

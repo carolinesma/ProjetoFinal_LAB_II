@@ -53,5 +53,12 @@ children:
       children:
       - type: Dynamic
         attributes: {id: i2c1, value: '100000'}
+  - type: Boolean
+    attributes: {id: I2C_INCLUDE_FORCED_WRITE_API}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: 'false'}
 - type: ElementPosition
   attributes: {x: '168', y: '81', id: i2c1}
